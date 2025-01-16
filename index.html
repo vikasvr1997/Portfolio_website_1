@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vikas Reddy Bodireddy | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+        .w3-sidebar {
+            width: 120px;
+            background: #222;
+        }
+        #main {
+            margin-left: 120px;
+        }
+        @media only screen and (max-width: 600px) {
+            #main {
+                margin-left: 0;
+            }
+        }
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <img src="https://raw.githubusercontent.com/vikasvr1997/Portfolio_Website/main/IMG_8441.JPG" style="width: 100%">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+    </a>
+    <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-briefcase w3-xxlarge"></i>
+        <p>EXPERIENCE</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-code w3-xxlarge"></i>
+        <p>PROJECTS</p>
+    </a>
+    <a href="#certifications" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-graduation-cap w3-xxlarge"></i>
+        <p>CERTIFICATIONS</p>
+    </a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-cogs w3-xxlarge"></i>
+        <p>SKILLS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+    </a>
+</nav>
+
+<!-- Main Content -->
+<div class="w3-padding-large" id="main">
+
+    <!-- About Section -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="about">
+        <h1 class="w3-jumbo">Vikas Reddy Bodireddy</h1>
+        <p>Software Developer, Data Scientist</p>
+        <img src="https://raw.githubusercontent.com/vikasvr1997/Portfolio_Website/main/IMG_8441.JPG" alt="Vikas Reddy Bodireddy" class="profile-img">
+    </header>
+
+    <!-- Education Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="education">
+        <h2 class="w3-text-light-grey">Education</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p><strong>Masters in Statistics, Minor in Data Science</strong></p>
+        <p>California State University East Bay, Hayward, CA (Jan 2023 – Dec 2024)</p>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="experience">
+        <h2 class="w3-text-light-grey">Experience</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <h3>Student Assistant</h3>
+        <p>California State University East Bay (July 2024 – Dec 2024)</p>
+        <ul>
+            <li>Developed and deployed a Python-based ML algorithm predicting business suitability based on location.</li>
+            <li>Engineered an ETL pipeline to ingest real-time data from Google Maps, Yelp into a SQL database.</li>
+            <li>Processed and loaded data using Apache Kafka, Spark into Snowflake, improving data processing speed by 40%.</li>
+            <li>Deployed models on AWS using Amazon S3 and EC2, achieving 70% accuracy.</li>
+            <li>Created a Tableau dashboard visualizing data from over 500 locations for suitability scores.</li>
+        </ul>
+
+        <h3>Java Software Engineer</h3>
+        <p>Walgreens (July 2022 – Dec 2022)</p>
+        <ul>
+            <li>Led development of a prescription microservice, improving processing time by 18%.</li>
+            <li>Enhanced transaction efficiency by 25% with database optimization and caching strategies.</li>
+            <li>Implemented CI/CD pipelines, accelerating deployments by 30%.</li>
+        </ul>
+
+        <h3>Software Engineer, ServiceNow</h3>
+        <p>Walgreens (June 2021 – July 2022)</p>
+        <ul>
+            <li>Designed ITSM systems for Incident and Change Management, reducing asset allocation time by 25%.</li>
+            <li>Developed REST APIs integrated with Apigee, improving system interoperability.</li>
+            <li>Created 12 custom Service Portal widgets, enhancing self-service for 1200 employees.</li>
+        </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects">
+        <h2 class="w3-text-light-grey">Projects</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <h3>Distributed Data Pipeline</h3>
+        <p>Python, Flask, React, PostgreSQL, Snowflake, Docker</p>
+        <ul>
+            <li>Processed 500+ GB daily data into Snowflake using Kafka and PySpark.</li>
+            <li>Built a distributed system for real-time analytics, enhancing decision-making by 75%.</li>
+            <li>Conducted testing with AWS Fault Injection Simulator to ensure scalability and fault tolerance.</li>
+        </ul>
+
+        <h3>Distributed Job Search Engine</h3>
+        <p>Python, Hugging Face, AWS S3, Docker, React.js</p>
+        <ul>
+            <li>Trained and deployed an NLP model analyzing job descriptions for better matches.</li>
+            <li>Built a recommender system leveraging LinkedIn and Indeed data.</li>
+            <li>Reduced job search time by 75% with precise recommendations.</li>
+        </ul>
+
+        <h3>Secure File Sharing System</h3>
+        <p>June 2024 – Dec 2024</p>
+        <ul>
+            <li>Developed a secure file-sharing system using AES, RSA, and SHA for end-to-end encryption.</li>
+            <li>Created a comprehensive test suite validating functionality and data confidentiality.</li>
+            <li>Improved security and efficiency by 30% with a Random Forest classification algorithm.</li>
+        </ul>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="certifications">
+        <h2 class="w3-text-light-grey">Certifications</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <ul>
+            <li><strong>Python Project for Data Engineering</strong> | Coursera</li>
+            <li><strong>Foundations of Modern Machine Learning</strong> | IIIT Hyderabad</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills">
+        <h2 class="w3-text-light-grey">Technical Skills</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <ul>
+            <li>Languages: Python, R, Java, C/C++, SQL (Postgres, Oracle), JavaScript, HTML/CSS, Linux</li>
+            <li>Frameworks: React, Node.js, Flask, JUnit, Pytest, Material-UI, FastAPI</li>
+            <li>Developer Tools: Git, Docker, Kubernetes, Snowflake, ServiceNow, AWS</li>
+            <li>Libraries: pandas, NumPy, Matplotlib, TensorFlow, PyTorch, OpenCV</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Me</h2>
+        <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-section">
+            <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Hayward, CA</p>
+            <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 (510)8203632</p>
+            <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: vikasreddy.1973@gmail.com</p>
+        </div><br>
+        <p>Let's get in touch. Send me a message:</p>
+
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
